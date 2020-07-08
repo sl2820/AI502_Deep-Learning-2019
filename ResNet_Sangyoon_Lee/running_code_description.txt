@@ -1,0 +1,17 @@
+Running instruction
+
+Models are defined in either 1) resnet_model.py or 2) plain_model.py
+All experimented models (plain_32, plain_56, resnet_20, resnet_32, resnet_56, resnet_110) defined as a function in either python file above. 
+
+To train, run train.py.
+In train.py, you can change the possible models by giving a model name as a parameter in line 161.
+    Ex)    run = Runner("resnet")# POSSIBLE MODEL ENTRY: plain, deep_plain, shallow, resnet, deeper, deep
+
+Each running consists of 5 runs of newly initialized model each. 
+Final display will show:
+1) Name of Model, 
+2) # of Parameters,
+Train and Test:
+3) Best Accuracy, 
+4) Average Accuracy, 
+5) STD
